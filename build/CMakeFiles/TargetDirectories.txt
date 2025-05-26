@@ -1,0 +1,3 @@
+/home/timnogga/camera_tests/build/CMakeFiles/OrbbecSDKTest.dir
+/home/timnogga/camera_tests/build/CMakeFiles/edit_cache.dir
+/home/timnogga/camera_tests/build/CMakeFiles/rebuild_cache.dir
