@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/timnogga/camera_tests/build
 
 # The main recursive "all" target.
 all: CMakeFiles/OrbbecSDKTest.dir/all
+all: CMakeFiles/DeviceInfoExample.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/OrbbecSDKTest.dir/clean
+clean: CMakeFiles/DeviceInfoExample.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +83,7 @@ clean: CMakeFiles/OrbbecSDKTest.dir/clean
 CMakeFiles/OrbbecSDKTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=1,2,3 "Built target OrbbecSDKTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=4,5,6 "Built target OrbbecSDKTest"
 .PHONY : CMakeFiles/OrbbecSDKTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +101,32 @@ OrbbecSDKTest: CMakeFiles/OrbbecSDKTest.dir/rule
 CMakeFiles/OrbbecSDKTest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/clean
 .PHONY : CMakeFiles/OrbbecSDKTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/DeviceInfoExample.dir
+
+# All Build rule for target.
+CMakeFiles/DeviceInfoExample.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=1,2,3 "Built target DeviceInfoExample"
+.PHONY : CMakeFiles/DeviceInfoExample.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DeviceInfoExample.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DeviceInfoExample.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
+.PHONY : CMakeFiles/DeviceInfoExample.dir/rule
+
+# Convenience name for target.
+DeviceInfoExample: CMakeFiles/DeviceInfoExample.dir/rule
+.PHONY : DeviceInfoExample
+
+# clean rule for target.
+CMakeFiles/DeviceInfoExample.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/clean
+.PHONY : CMakeFiles/DeviceInfoExample.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

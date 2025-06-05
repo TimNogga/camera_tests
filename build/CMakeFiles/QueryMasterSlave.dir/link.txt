@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/QueryMasterSlave.dir/QueryMasterSlave.cpp.o -o bin/QueryMasterSlave  -Wl,-rpath,/home/timnogga/OrbbecSDK/lib/linux_x64 /home/timnogga/OrbbecSDK/lib/linux_x64/libOrbbecSDK.so 

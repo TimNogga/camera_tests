@@ -190,6 +190,15 @@ ORBEC_SDK_ROOT:PATH=/home/timnogga/OrbbecSDK
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //Value Computed by CMake
+OrbbecSDKProject_BINARY_DIR:STATIC=/home/timnogga/camera_tests/build
+
+//Value Computed by CMake
+OrbbecSDKProject_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+OrbbecSDKProject_SOURCE_DIR:STATIC=/home/timnogga/camera_tests
+
+//Value Computed by CMake
 OrbbecSDKTest_BINARY_DIR:STATIC=/home/timnogga/camera_tests/build
 
 //Value Computed by CMake

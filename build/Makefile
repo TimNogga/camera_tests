@@ -129,6 +129,43 @@ OrbbecSDKTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/build
 .PHONY : OrbbecSDKTest/fast
 
+#=============================================================================
+# Target rules for targets named DeviceInfoExample
+
+# Build rule for target.
+DeviceInfoExample: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DeviceInfoExample
+.PHONY : DeviceInfoExample
+
+# fast build rule for target.
+DeviceInfoExample/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/build
+.PHONY : DeviceInfoExample/fast
+
+DeviceInfoExample.o: DeviceInfoExample.cpp.o
+.PHONY : DeviceInfoExample.o
+
+# target to build an object file
+DeviceInfoExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/DeviceInfoExample.cpp.o
+.PHONY : DeviceInfoExample.cpp.o
+
+DeviceInfoExample.i: DeviceInfoExample.cpp.i
+.PHONY : DeviceInfoExample.i
+
+# target to preprocess a source file
+DeviceInfoExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/DeviceInfoExample.cpp.i
+.PHONY : DeviceInfoExample.cpp.i
+
+DeviceInfoExample.s: DeviceInfoExample.cpp.s
+.PHONY : DeviceInfoExample.s
+
+# target to generate assembly for a file
+DeviceInfoExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/DeviceInfoExample.cpp.s
+.PHONY : DeviceInfoExample.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -159,6 +196,7 @@ src/FrameSaver.o: src/FrameSaver.cpp.o
 # target to build an object file
 src/FrameSaver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.o
 .PHONY : src/FrameSaver.cpp.o
 
 src/FrameSaver.i: src/FrameSaver.cpp.i
@@ -167,6 +205,7 @@ src/FrameSaver.i: src/FrameSaver.cpp.i
 # target to preprocess a source file
 src/FrameSaver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.i
 .PHONY : src/FrameSaver.cpp.i
 
 src/FrameSaver.s: src/FrameSaver.cpp.s
@@ -175,6 +214,7 @@ src/FrameSaver.s: src/FrameSaver.cpp.s
 # target to generate assembly for a file
 src/FrameSaver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.s
 .PHONY : src/FrameSaver.cpp.s
 
 # Help Target
@@ -185,7 +225,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... DeviceInfoExample"
 	@echo "... OrbbecSDKTest"
+	@echo "... DeviceInfoExample.o"
+	@echo "... DeviceInfoExample.i"
+	@echo "... DeviceInfoExample.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
