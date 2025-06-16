@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/timnogga/camera_tests/build
 # The main recursive "all" target.
 all: CMakeFiles/OrbbecSDKTest.dir/all
 all: CMakeFiles/DeviceInfoExample.dir/all
+all: CMakeFiles/SetDeviceMode.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/OrbbecSDKTest.dir/clean
 clean: CMakeFiles/DeviceInfoExample.dir/clean
+clean: CMakeFiles/SetDeviceMode.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +129,32 @@ DeviceInfoExample: CMakeFiles/DeviceInfoExample.dir/rule
 CMakeFiles/DeviceInfoExample.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/clean
 .PHONY : CMakeFiles/DeviceInfoExample.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SetDeviceMode.dir
+
+# All Build rule for target.
+CMakeFiles/SetDeviceMode.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=7,8 "Built target SetDeviceMode"
+.PHONY : CMakeFiles/SetDeviceMode.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SetDeviceMode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SetDeviceMode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
+.PHONY : CMakeFiles/SetDeviceMode.dir/rule
+
+# Convenience name for target.
+SetDeviceMode: CMakeFiles/SetDeviceMode.dir/rule
+.PHONY : SetDeviceMode
+
+# clean rule for target.
+CMakeFiles/SetDeviceMode.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/clean
+.PHONY : CMakeFiles/SetDeviceMode.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

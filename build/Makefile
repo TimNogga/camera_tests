@@ -142,6 +142,19 @@ DeviceInfoExample/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/build
 .PHONY : DeviceInfoExample/fast
 
+#=============================================================================
+# Target rules for targets named SetDeviceMode
+
+# Build rule for target.
+SetDeviceMode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SetDeviceMode
+.PHONY : SetDeviceMode
+
+# fast build rule for target.
+SetDeviceMode/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/build
+.PHONY : SetDeviceMode/fast
+
 DeviceInfoExample.o: DeviceInfoExample.cpp.o
 .PHONY : DeviceInfoExample.o
 
@@ -165,6 +178,30 @@ DeviceInfoExample.s: DeviceInfoExample.cpp.s
 DeviceInfoExample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/DeviceInfoExample.cpp.s
 .PHONY : DeviceInfoExample.cpp.s
+
+SetDeviceMode.o: SetDeviceMode.cpp.o
+.PHONY : SetDeviceMode.o
+
+# target to build an object file
+SetDeviceMode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/SetDeviceMode.cpp.o
+.PHONY : SetDeviceMode.cpp.o
+
+SetDeviceMode.i: SetDeviceMode.cpp.i
+.PHONY : SetDeviceMode.i
+
+# target to preprocess a source file
+SetDeviceMode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/SetDeviceMode.cpp.i
+.PHONY : SetDeviceMode.cpp.i
+
+SetDeviceMode.s: SetDeviceMode.cpp.s
+.PHONY : SetDeviceMode.s
+
+# target to generate assembly for a file
+SetDeviceMode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/SetDeviceMode.cpp.s
+.PHONY : SetDeviceMode.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -227,9 +264,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DeviceInfoExample"
 	@echo "... OrbbecSDKTest"
+	@echo "... SetDeviceMode"
 	@echo "... DeviceInfoExample.o"
 	@echo "... DeviceInfoExample.i"
 	@echo "... DeviceInfoExample.s"
+	@echo "... SetDeviceMode.o"
+	@echo "... SetDeviceMode.i"
+	@echo "... SetDeviceMode.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

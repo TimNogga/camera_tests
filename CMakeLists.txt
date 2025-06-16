@@ -33,7 +33,7 @@ set_target_properties(OrbbecSDKTest PROPERTIES
 # ── Second executable: DeviceInfoExample ─────────────────────────────────────
 add_executable(DeviceInfoExample
     DeviceInfoExample.cpp
-    src/FrameSaver.cpp            # include if you want FrameSaver helper
+    src/FrameSaver.cpp            
 )
 
 target_include_directories(DeviceInfoExample PRIVATE
@@ -46,5 +46,17 @@ target_link_libraries(DeviceInfoExample PRIVATE
 )
 
 set_target_properties(DeviceInfoExample PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
+
+# Third Executable SetDeviceMode
+add_executable(SetDeviceMode
+    SetDeviceMode.cpp
+)
+target_link_libraries(SetDeviceMode PRIVATE
+    OrbbecSDK::OrbbecSDK
+    ${OpenCV_LIBS}              
+)
+set_target_properties(SetDeviceMode PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )

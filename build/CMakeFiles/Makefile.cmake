@@ -49,4 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/OrbbecSDKTest.dir/DependInfo.cmake"
   "CMakeFiles/DeviceInfoExample.dir/DependInfo.cmake"
+  "CMakeFiles/SetDeviceMode.dir/DependInfo.cmake"
   )

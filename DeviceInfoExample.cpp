@@ -25,6 +25,8 @@ int main() {
         for (uint32_t i = 0; i < count; ++i) {
             auto dev  = deviceList->getDevice(i);
             auto info = dev->getDeviceInfo();
+            auto cfg = dev->getMultiDeviceSyncConfig();
+            
 
             // Header
             std::cout << "============================================\n";
@@ -55,6 +57,11 @@ int main() {
             }
 
             // List Sensors
+            if(cfg.syncMode == OB_MULTI_DEVICE_SYNC_MODE_PRIMARY) {
+                std::cout << "Device [" << i << "] is the master device.\n";
+            } else {
+                std::cout << "Device [" << i << "] is a slave device.\n";
+            }
             auto sensorList = dev->getSensorList();
             uint32_t sensorCount = sensorList->count();
             std::cout << "\n  Sensors (" << sensorCount << "):\n";
