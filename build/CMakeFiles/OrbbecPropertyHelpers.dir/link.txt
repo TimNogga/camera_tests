@@ -1,0 +1,2 @@
+/usr/bin/ar qc libOrbbecPropertyHelpers.a "CMakeFiles/OrbbecPropertyHelpers.dir/home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.o"
+/usr/bin/ranlib libOrbbecPropertyHelpers.a

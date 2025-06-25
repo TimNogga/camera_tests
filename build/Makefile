@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named OrbbecPropertyHelpers
+
+# Build rule for target.
+OrbbecPropertyHelpers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OrbbecPropertyHelpers
+.PHONY : OrbbecPropertyHelpers
+
+# fast build rule for target.
+OrbbecPropertyHelpers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/build
+.PHONY : OrbbecPropertyHelpers/fast
+
+#=============================================================================
 # Target rules for targets named OrbbecSDKTest
 
 # Build rule for target.
@@ -155,6 +168,32 @@ SetDeviceMode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/build
 .PHONY : SetDeviceMode/fast
 
+#=============================================================================
+# Target rules for targets named SyncCams
+
+# Build rule for target.
+SyncCams: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SyncCams
+.PHONY : SyncCams
+
+# fast build rule for target.
+SyncCams/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/build
+.PHONY : SyncCams/fast
+
+#=============================================================================
+# Target rules for targets named GetParameters
+
+# Build rule for target.
+GetParameters: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GetParameters
+.PHONY : GetParameters
+
+# fast build rule for target.
+GetParameters/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/build
+.PHONY : GetParameters/fast
+
 DeviceInfoExample.o: DeviceInfoExample.cpp.o
 .PHONY : DeviceInfoExample.o
 
@@ -179,6 +218,30 @@ DeviceInfoExample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/DeviceInfoExample.cpp.s
 .PHONY : DeviceInfoExample.cpp.s
 
+GetParameters.o: GetParameters.cpp.o
+.PHONY : GetParameters.o
+
+# target to build an object file
+GetParameters.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/GetParameters.cpp.o
+.PHONY : GetParameters.cpp.o
+
+GetParameters.i: GetParameters.cpp.i
+.PHONY : GetParameters.i
+
+# target to preprocess a source file
+GetParameters.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/GetParameters.cpp.i
+.PHONY : GetParameters.cpp.i
+
+GetParameters.s: GetParameters.cpp.s
+.PHONY : GetParameters.s
+
+# target to generate assembly for a file
+GetParameters.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/GetParameters.cpp.s
+.PHONY : GetParameters.cpp.s
+
 SetDeviceMode.o: SetDeviceMode.cpp.o
 .PHONY : SetDeviceMode.o
 
@@ -202,6 +265,54 @@ SetDeviceMode.s: SetDeviceMode.cpp.s
 SetDeviceMode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/SetDeviceMode.cpp.s
 .PHONY : SetDeviceMode.cpp.s
+
+SyncCams.o: SyncCams.cpp.o
+.PHONY : SyncCams.o
+
+# target to build an object file
+SyncCams.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/SyncCams.cpp.o
+.PHONY : SyncCams.cpp.o
+
+SyncCams.i: SyncCams.cpp.i
+.PHONY : SyncCams.i
+
+# target to preprocess a source file
+SyncCams.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/SyncCams.cpp.i
+.PHONY : SyncCams.cpp.i
+
+SyncCams.s: SyncCams.cpp.s
+.PHONY : SyncCams.s
+
+# target to generate assembly for a file
+SyncCams.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/SyncCams.cpp.s
+.PHONY : SyncCams.cpp.s
+
+home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.o: home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.o
+.PHONY : home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.o
+
+# target to build an object file
+home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.o
+.PHONY : home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.o
+
+home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.i: home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.i
+.PHONY : home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.i
+
+# target to preprocess a source file
+home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.i
+.PHONY : home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.i
+
+home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.s: home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.s
+.PHONY : home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.s
+
+# target to generate assembly for a file
+home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.s
+.PHONY : home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -234,6 +345,7 @@ src/FrameSaver.o: src/FrameSaver.cpp.o
 src/FrameSaver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/src/FrameSaver.cpp.o
 .PHONY : src/FrameSaver.cpp.o
 
 src/FrameSaver.i: src/FrameSaver.cpp.i
@@ -243,6 +355,7 @@ src/FrameSaver.i: src/FrameSaver.cpp.i
 src/FrameSaver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/src/FrameSaver.cpp.i
 .PHONY : src/FrameSaver.cpp.i
 
 src/FrameSaver.s: src/FrameSaver.cpp.s
@@ -252,6 +365,7 @@ src/FrameSaver.s: src/FrameSaver.cpp.s
 src/FrameSaver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/src/FrameSaver.cpp.s
 .PHONY : src/FrameSaver.cpp.s
 
 # Help Target
@@ -263,14 +377,26 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DeviceInfoExample"
+	@echo "... GetParameters"
+	@echo "... OrbbecPropertyHelpers"
 	@echo "... OrbbecSDKTest"
 	@echo "... SetDeviceMode"
+	@echo "... SyncCams"
 	@echo "... DeviceInfoExample.o"
 	@echo "... DeviceInfoExample.i"
 	@echo "... DeviceInfoExample.s"
+	@echo "... GetParameters.o"
+	@echo "... GetParameters.i"
+	@echo "... GetParameters.s"
 	@echo "... SetDeviceMode.o"
 	@echo "... SetDeviceMode.i"
 	@echo "... SetDeviceMode.s"
+	@echo "... SyncCams.o"
+	@echo "... SyncCams.i"
+	@echo "... SyncCams.s"
+	@echo "... home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.o"
+	@echo "... home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.i"
+	@echo "... home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl/SensorControl.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -109,6 +109,7 @@ bin/DeviceInfoExample: CMakeFiles/DeviceInfoExample.dir/DeviceInfoExample.cpp.o
 bin/DeviceInfoExample: CMakeFiles/DeviceInfoExample.dir/src/FrameSaver.cpp.o
 bin/DeviceInfoExample: CMakeFiles/DeviceInfoExample.dir/build.make
 bin/DeviceInfoExample: /home/timnogga/OrbbecSDK/lib/linux_x64/libOrbbecSDK.so
+bin/DeviceInfoExample: libOrbbecPropertyHelpers.a
 bin/DeviceInfoExample: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 bin/DeviceInfoExample: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 bin/DeviceInfoExample: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d

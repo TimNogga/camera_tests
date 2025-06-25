@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/timnogga/OrbbecSDK/include -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/timnogga/camera_tests/include -I/home/timnogga/OrbbecSDK/examples/cpp/Sample-SensorControl -isystem /home/timnogga/OrbbecSDK/include -isystem /usr/include/opencv4
 
 CXX_FLAGS = -std=gnu++17
 

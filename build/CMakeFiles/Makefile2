@@ -63,9 +63,12 @@ CMAKE_BINARY_DIR = /home/timnogga/camera_tests/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/OrbbecPropertyHelpers.dir/all
 all: CMakeFiles/OrbbecSDKTest.dir/all
 all: CMakeFiles/DeviceInfoExample.dir/all
 all: CMakeFiles/SetDeviceMode.dir/all
+all: CMakeFiles/SyncCams.dir/all
+all: CMakeFiles/GetParameters.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,24 +76,53 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/OrbbecPropertyHelpers.dir/clean
 clean: CMakeFiles/OrbbecSDKTest.dir/clean
 clean: CMakeFiles/DeviceInfoExample.dir/clean
 clean: CMakeFiles/SetDeviceMode.dir/clean
+clean: CMakeFiles/SyncCams.dir/clean
+clean: CMakeFiles/GetParameters.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OrbbecPropertyHelpers.dir
+
+# All Build rule for target.
+CMakeFiles/OrbbecPropertyHelpers.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=6,7 "Built target OrbbecPropertyHelpers"
+.PHONY : CMakeFiles/OrbbecPropertyHelpers.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OrbbecPropertyHelpers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OrbbecPropertyHelpers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
+.PHONY : CMakeFiles/OrbbecPropertyHelpers.dir/rule
+
+# Convenience name for target.
+OrbbecPropertyHelpers: CMakeFiles/OrbbecPropertyHelpers.dir/rule
+.PHONY : OrbbecPropertyHelpers
+
+# clean rule for target.
+CMakeFiles/OrbbecPropertyHelpers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecPropertyHelpers.dir/build.make CMakeFiles/OrbbecPropertyHelpers.dir/clean
+.PHONY : CMakeFiles/OrbbecPropertyHelpers.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/OrbbecSDKTest.dir
 
 # All Build rule for target.
-CMakeFiles/OrbbecSDKTest.dir/all:
+CMakeFiles/OrbbecSDKTest.dir/all: CMakeFiles/OrbbecPropertyHelpers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OrbbecSDKTest.dir/build.make CMakeFiles/OrbbecSDKTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=4,5,6 "Built target OrbbecSDKTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=8,9,10 "Built target OrbbecSDKTest"
 .PHONY : CMakeFiles/OrbbecSDKTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OrbbecSDKTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OrbbecSDKTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
 .PHONY : CMakeFiles/OrbbecSDKTest.dir/rule
@@ -108,7 +140,7 @@ CMakeFiles/OrbbecSDKTest.dir/clean:
 # Target rules for target CMakeFiles/DeviceInfoExample.dir
 
 # All Build rule for target.
-CMakeFiles/DeviceInfoExample.dir/all:
+CMakeFiles/DeviceInfoExample.dir/all: CMakeFiles/OrbbecPropertyHelpers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeviceInfoExample.dir/build.make CMakeFiles/DeviceInfoExample.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=1,2,3 "Built target DeviceInfoExample"
@@ -116,7 +148,7 @@ CMakeFiles/DeviceInfoExample.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DeviceInfoExample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DeviceInfoExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
 .PHONY : CMakeFiles/DeviceInfoExample.dir/rule
@@ -134,15 +166,15 @@ CMakeFiles/DeviceInfoExample.dir/clean:
 # Target rules for target CMakeFiles/SetDeviceMode.dir
 
 # All Build rule for target.
-CMakeFiles/SetDeviceMode.dir/all:
+CMakeFiles/SetDeviceMode.dir/all: CMakeFiles/OrbbecPropertyHelpers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=7,8 "Built target SetDeviceMode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=11,12 "Built target SetDeviceMode"
 .PHONY : CMakeFiles/SetDeviceMode.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SetDeviceMode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SetDeviceMode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
 .PHONY : CMakeFiles/SetDeviceMode.dir/rule
@@ -155,6 +187,58 @@ SetDeviceMode: CMakeFiles/SetDeviceMode.dir/rule
 CMakeFiles/SetDeviceMode.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetDeviceMode.dir/build.make CMakeFiles/SetDeviceMode.dir/clean
 .PHONY : CMakeFiles/SetDeviceMode.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SyncCams.dir
+
+# All Build rule for target.
+CMakeFiles/SyncCams.dir/all: CMakeFiles/OrbbecPropertyHelpers.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=13,14,15 "Built target SyncCams"
+.PHONY : CMakeFiles/SyncCams.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SyncCams.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SyncCams.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
+.PHONY : CMakeFiles/SyncCams.dir/rule
+
+# Convenience name for target.
+SyncCams: CMakeFiles/SyncCams.dir/rule
+.PHONY : SyncCams
+
+# clean rule for target.
+CMakeFiles/SyncCams.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SyncCams.dir/build.make CMakeFiles/SyncCams.dir/clean
+.PHONY : CMakeFiles/SyncCams.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/GetParameters.dir
+
+# All Build rule for target.
+CMakeFiles/GetParameters.dir/all: CMakeFiles/OrbbecPropertyHelpers.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/timnogga/camera_tests/build/CMakeFiles --progress-num=4,5 "Built target GetParameters"
+.PHONY : CMakeFiles/GetParameters.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GetParameters.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GetParameters.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/timnogga/camera_tests/build/CMakeFiles 0
+.PHONY : CMakeFiles/GetParameters.dir/rule
+
+# Convenience name for target.
+GetParameters: CMakeFiles/GetParameters.dir/rule
+.PHONY : GetParameters
+
+# clean rule for target.
+CMakeFiles/GetParameters.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GetParameters.dir/build.make CMakeFiles/GetParameters.dir/clean
+.PHONY : CMakeFiles/GetParameters.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

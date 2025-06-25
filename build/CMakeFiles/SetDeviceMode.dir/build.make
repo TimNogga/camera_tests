@@ -93,6 +93,7 @@ SetDeviceMode_EXTERNAL_OBJECTS =
 bin/SetDeviceMode: CMakeFiles/SetDeviceMode.dir/SetDeviceMode.cpp.o
 bin/SetDeviceMode: CMakeFiles/SetDeviceMode.dir/build.make
 bin/SetDeviceMode: /home/timnogga/OrbbecSDK/lib/linux_x64/libOrbbecSDK.so
+bin/SetDeviceMode: libOrbbecPropertyHelpers.a
 bin/SetDeviceMode: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 bin/SetDeviceMode: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 bin/SetDeviceMode: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d

@@ -13,8 +13,8 @@ int main() try
         return 1;
     }
 
-    ob::Pipeline pipe;           
-    pipe.start();                
+    ob::Pipeline pipe;
+    pipe.start();               
 
     int saved = 0;
     while (saved < N_SETS) {

@@ -1,5 +1,8 @@
+/home/timnogga/camera_tests/build/CMakeFiles/OrbbecPropertyHelpers.dir
 /home/timnogga/camera_tests/build/CMakeFiles/OrbbecSDKTest.dir
 /home/timnogga/camera_tests/build/CMakeFiles/DeviceInfoExample.dir
 /home/timnogga/camera_tests/build/CMakeFiles/SetDeviceMode.dir
+/home/timnogga/camera_tests/build/CMakeFiles/SyncCams.dir
+/home/timnogga/camera_tests/build/CMakeFiles/GetParameters.dir
 /home/timnogga/camera_tests/build/CMakeFiles/edit_cache.dir
 /home/timnogga/camera_tests/build/CMakeFiles/rebuild_cache.dir

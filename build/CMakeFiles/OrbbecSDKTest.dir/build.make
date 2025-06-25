@@ -109,6 +109,7 @@ bin/OrbbecSDKTest: CMakeFiles/OrbbecSDKTest.dir/main.cpp.o
 bin/OrbbecSDKTest: CMakeFiles/OrbbecSDKTest.dir/src/FrameSaver.cpp.o
 bin/OrbbecSDKTest: CMakeFiles/OrbbecSDKTest.dir/build.make
 bin/OrbbecSDKTest: /home/timnogga/OrbbecSDK/lib/linux_x64/libOrbbecSDK.so
+bin/OrbbecSDKTest: libOrbbecPropertyHelpers.a
 bin/OrbbecSDKTest: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 bin/OrbbecSDKTest: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 bin/OrbbecSDKTest: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
