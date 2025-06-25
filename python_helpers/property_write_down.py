@@ -1,4 +1,3 @@
-# Python script to generate structured properties text file
 
 properties = [
     {"index": 0,  "name": "OB_PROP_DEPTH_MIRROR_BOOL",              "id": 14,   "type": 0},
