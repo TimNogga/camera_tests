@@ -24,7 +24,7 @@ int main() try {
 
     ob::Pipeline slave (list->getDevice(1));
     ob::Pipeline master(list->getDevice(0));
-
+    
     slave.start();
     std::this_thread::sleep_for(std::chrono::seconds(2));
     master.start();
